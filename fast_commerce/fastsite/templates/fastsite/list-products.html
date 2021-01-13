@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<title>Products</title>
+</head>
+<body>
+		
+</tbody>
+</table>
+
+<div class="salesforce">
+	<div class="content">
+		<div id="content-wrapper">
+			<table class="table">
+				<thead>
+				  <tr>
+					<th scope="col">#</th>
+					<th scope="col">Name</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for product in products %}
+					<tr>
+						<th scope="row">{{ forloop.counter }}</th>
+						<td>{{ product.Name }}</td>
+						<td>{{  product.UnitPrice }}</td>
+					</tr>
+					{% endfor %}
+			</tbody>
+			</table>
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+</table>
+<div class="">
+	<div class="content">
+		<div id="content-wrapper">
+			<table class="table">
+				<tbody>
+					{% for entry in pricebook_entries %}
+					<tr>
+						<td scope="row"> >{{ forloop.counter }}</td>
+						<td>{{ entry.Name }}</td>
+						<td>{{ entry.Pricebook2 }}</td>
+						<td>{{ entry.Product2 }}</td>
+						<td>{{ entry.UseStandardPrice }}</td>
+						<td>{{ entry.UnitPrice }}</td>
+					</tr>
+					{% endfor %}
+			</tbody>
+			</table>
+
+
+</body>
+</html>
